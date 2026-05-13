@@ -315,47 +315,60 @@ export default function Home() {
         </div>
       </section>
 
-      <footer className="px-6 py-8">
-        <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-5 text-sm text-white/55 md:flex-row">
-          <p>© 2026 Kanae Bunche. All rights reserved.</p>
+     <footer id="contact" className="border-t border-white/10 px-6 py-10">
+  <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-6 md:flex-row">
+    
+    <div>
+      <h3 className="text-xl font-black tracking-tight text-white">
+        Kanae Bunche
+      </h3>
 
-          <div className="flex flex-wrap items-center justify-center gap-6">
-            <a
-              href="https://github.com/KanaeBunche"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="transition hover:text-violet-400"
-            >
-              GitHub
-            </a>
+      <p className="mt-2 text-sm text-white/45">
+        Software Engineer • Web Designer • Creative Developer
+      </p>
+    </div>
 
-            <a
-              href="https://www.linkedin.com/in/kanae-bunche/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="transition hover:text-violet-400"
-            >
-              LinkedIn
-            </a>
+    <div className="flex flex-wrap items-center justify-center gap-4">
+      <a
+        href="https://github.com/KanaeBunche"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="rounded-full border border-white/10 bg-white/[0.03] px-5 py-2 text-sm font-medium text-white/70 transition hover:border-violet-500/40 hover:bg-violet-500/10 hover:text-white"
+      >
+        GitHub
+      </a>
 
-            <a
-              href="https://www.kodedbykanae.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="transition hover:text-violet-400"
-            >
-              Koded by Kanae
-            </a>
+      <a
+        href="https://www.linkedin.com/in/kanae-bunche/"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="rounded-full border border-white/10 bg-white/[0.03] px-5 py-2 text-sm font-medium text-white/70 transition hover:border-violet-500/40 hover:bg-violet-500/10 hover:text-white"
+      >
+        LinkedIn
+      </a>
 
-            <a
-              href="mailto:kodedbykanae@gmail.com"
-              className="transition hover:text-violet-400"
-            >
-              Email
-            </a>
-          </div>
-        </div>
-      </footer>
+      <a
+        href="https://www.kodedbykanae.com/"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="rounded-full border border-white/10 bg-white/[0.03] px-5 py-2 text-sm font-medium text-white/70 transition hover:border-violet-500/40 hover:bg-violet-500/10 hover:text-white"
+      >
+        Koded by Kanae
+      </a>
+
+      <a
+        href="mailto:kodedbykanae@gmail.com"
+        className="rounded-full border border-violet-500/30 bg-violet-500/10 px-5 py-2 text-sm font-semibold text-violet-200 transition hover:bg-violet-500/20"
+      >
+        Email
+      </a>
+    </div>
+  </div>
+
+  <div className="mx-auto mt-8 max-w-7xl border-t border-white/5 pt-6 text-center text-xs text-white/35">
+    © 2026 Kanae Bunche. All rights reserved.
+  </div>
+</footer>
     </main>
   );
 }
