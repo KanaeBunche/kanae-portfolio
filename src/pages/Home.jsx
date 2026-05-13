@@ -4,7 +4,8 @@ import thinkwork from "../assets/projects/thinkwork-preview.png";
 import koded from "../assets/projects/koded-preview.png";
 import cybermissions from "../assets/projects/cybermissions-preview.png";
 import fordham from "../assets/projects/fordham-preview.png";
-import resumePDF from "../assets/resume/Kanae-Bunche-Resume.pdf";
+const resumePDF = "/Kanae-Bunche-Resume.pdf";
+
 import {
   FaReact,
   FaHtml5,
