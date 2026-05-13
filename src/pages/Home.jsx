@@ -1,5 +1,5 @@
 import { ArrowRight, Mail, Code2 } from "lucide-react";
-
+import christkid from "../assets/projects/christkid-preview.png"
 import thinkwork from "../assets/projects/thinkwork-preview.png";
 import koded from "../assets/projects/koded-preview.png";
 import cybermissions from "../assets/projects/cybermissions-preview.png";
@@ -30,24 +30,35 @@ const projects = [
     description: "A modern training platform for basketball athletes.",
     image: thinkwork,
     tech: ["React", "Tailwind", "Vite"],
+    live: "https://thinkwork-basketball.vercel.app/",
   },
   {
     title: "Koded by Kanae",
     description: "Personal brand website for a developer and educator.",
     image: koded,
     tech: ["React", "Tailwind", "Vite"],
+    live: "https://www.kodedbykanae.com/",
   },
   {
     title: "Cybermissions Redesign",
     description: "Redesigning a cybersecurity education platform.",
     image: cybermissions,
     tech: ["Figma", "React", "Tailwind"],
+    live: "https://www.cybermissions.org/",
   },
   {
     title: "Fordham AI Tools Platform",
     description: "AI tools platform built for Fordham students.",
     image: fordham,
     tech: ["React", "Tailwind", "Vite"],
+    live: "https://www.loom.com/share/1f335e36b83e4037a82870195559750e",
+  },
+  {
+    title: "ChristKid",
+    description: "Faith-based ecommerce brand experience.",
+    image: christkid,
+    tech: ["React", "Tailwind", "Vite"],
+    live: "https://christkid-llc.vercel.app/",
   },
 ];
 const skills = [
@@ -250,17 +261,27 @@ export default function Home() {
                   <p className="mt-3 min-h-[52px] text-sm leading-6 text-white/65">
                     {project.description}
                   </p>
+<div className="mt-5 flex flex-wrap gap-2">
+  {project.tech.map((item) => (
+    <span
+      key={item}
+      className="rounded-full bg-violet-500/20 px-3 py-1 text-xs text-violet-200"
+    >
+      {item}
+    </span>
+  ))}
+</div>
 
-                  <div className="mt-5 flex flex-wrap gap-2">
-                    {project.tech.map((item) => (
-                      <span
-                        key={item}
-                        className="rounded-full bg-violet-500/20 px-3 py-1 text-xs text-violet-200"
-                      >
-                        {item}
-                      </span>
-                    ))}
-                  </div>
+<a
+  href={project.live}
+  target="_blank"
+  rel="noopener noreferrer"
+  className="mt-6 inline-flex items-center gap-2 rounded-xl border border-violet-500/30 bg-violet-500/10 px-4 py-3 text-sm font-semibold text-violet-200 transition hover:bg-violet-500/20"
+>
+  View Project <ArrowRight size={16} />
+</a>
+                 
+                  
                 </div>
               </article>
             ))}
