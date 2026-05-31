@@ -181,7 +181,7 @@ export default function Home() {
                 </p>
                 <p className="pl-6">
                   role:{" "}
-                  <span className="text-sky-300">"Front-End Developer"</span>,
+                  <span className="text-sky-300">"Full-Stack Developer"</span>,
                 </p>
                 <p className="pl-6">
                   passion:{" "}
